@@ -16,7 +16,7 @@ namespace Rescues
         public EnemyBehaviour Enemy;
 
         public event Action<IInteractable> AddObjectHandler = delegate(IInteractable interactable) {  };
-        public readonly SortedList<InteractableObjectType, List<IInteractable>> _onTriggers;
+        private readonly SortedList<InteractableObjectType, List<IInteractable>> _onTriggers;
         private readonly List<IInteractable> _interactables;
         
         #endregion
